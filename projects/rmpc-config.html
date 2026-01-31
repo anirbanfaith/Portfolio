@@ -40,20 +40,119 @@
 
   <h1>rmpc-config         <a href="https://github.com/anirbanfaith/rmpc-config"><img src="/Portfolio/assets/github.svg" width="18"></a></h1>
 
-  <p>
-    I switched to a CLI-based music player named rmpc and ran into limitations
-    with the default configuration.
-  </p>
+  <h2>Overview</h2>
 
-  <p>
-    This repository contains my personal configuration focused on minimalism,
-    keyboard-driven usage, and reducing friction while listening to music.
-  </p>
+<p>
+  This repository contains my personal configuration for rmpc, a
+  terminal-based music player built on top of MPD. The configuration is
+  focused on minimalism, keyboard-driven usage, and reducing friction
+  during everyday listening.
+</p>
 
-  <p>
-    Working on this helped me better understand terminal workflows and how small
-    configuration choices impact daily usability.
-  </p>
+<p>
+  It is not meant to be a showcase or a heavily themed setup. The goal is
+  to make rmpc feel quiet, predictable, and easy to use inside a
+  terminal-first workflow.
+</p>
+
+<h2>Why rmpc</h2>
+
+<p>
+  Most graphical music players introduce unnecessary complexity for a task
+  that should stay simple. rmpc fits naturally into a CLI-based workflow
+  and works well when you prefer keeping your hands on the keyboard.
+</p>
+
+<p>
+  While the default configuration is usable, small changes to layout,
+  keybindings, and defaults make a noticeable difference in daily use.
+</p>
+
+<h2>Prerequisites</h2>
+
+<p>
+  Before using this configuration, make sure you have the following:
+</p>
+
+<ul>
+  <li>A Linux or Unix-like system</li>
+  <li>MPD (Music Player Daemon) installed and running</li>
+  <li>rmpc installed</li>
+  <li>A terminal emulator with UTF-8 support</li>
+</ul>
+
+<h2>Installation</h2>
+
+<p>
+  Install rmpc using your system package manager.
+</p>
+
+<pre>
+sudo pacman -S rmpc
+</pre>
+
+<p>
+  Clone this repository:
+</p>
+
+<pre>
+git clone https://github.com/anirbanfaith/rmpc-config.git
+</pre>
+
+<p>
+  Create the rmpc configuration directory if it does not exist:
+</p>
+
+<pre>
+mkdir -p ~/.config/rmpc
+</pre>
+
+<p>
+  Copy the configuration file:
+</p>
+
+<pre>
+cp rmpc-config/config.toml ~/.config/rmpc/config.toml
+</pre>
+
+<p>
+  Adjust the filename if your local setup differs.
+</p>
+
+<h2>Usage</h2>
+
+<p>
+  Make sure MPD is running, then start rmpc:
+</p>
+
+<pre>
+rmpc
+</pre>
+
+<p>
+  The configuration is intended to work out of the box. Changes should be
+  made gradually, based on real usage rather than experimentation for its
+  own sake.
+</p>
+
+<h2>Design Principles</h2>
+
+<ul>
+  <li>Minimal interface</li>
+  <li>Keyboard-first navigation</li>
+  <li>Reduced visual noise</li>
+  <li>Predictable behavior</li>
+  <li>Small, intentional defaults</li>
+</ul>
+
+<h2>Notes</h2>
+
+<p>
+  This configuration reflects my personal workflow. You are encouraged to
+  fork it and adapt it to your own habits. Small changes often have more
+  impact than large rewrites.
+</p>
+
 
   <p>
     <strong>Tech explored</strong><br>
