@@ -116,17 +116,34 @@
   sudo pacman -S mpd
 </pre>
 
+<p>
+  Create a config folder inside your .config folder.
+</p>
+
 <pre>
   mkdir -p ~/.config/mpd
 </pre>
+
+<p>
+  Create a config file inside your .config/mpd
+</p>
 
 <pre>
   nano mpd.conf
 </pre>
 
+<p>
+  Open that config file via nano editor.
+</p>
+
 <pre>
   nano ~/.config/mpd/mpd.conf
 </pre>
+
+<p>
+  Paste this file ctrl+shift+v<br>
+  After pasting ctrl+o then enter then ctrl+x
+</p>
 
 <pre>
   music_directory     "~/Music"
@@ -148,6 +165,14 @@ audio_output {
     type "pipewire"
     name "PipeWire"
 }
+</pre>
+
+<p>
+  Make sure MPD is running, then start rmpc:
+</p>
+
+<pre>
+rmpc
 </pre>
 
 <p>
