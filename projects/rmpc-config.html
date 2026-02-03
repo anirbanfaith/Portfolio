@@ -128,6 +128,27 @@
   nano ~/.config/mpd/mpd.conf
 </pre>
 
+<pre>
+  music_directory     "~/Music"
+
+auto_update "yes"
+
+playlist_directory  "~/.local/share/mpd/playlists"
+db_file             "~/.local/share/mpd/database"
+log_file            "~/.local/share/mpd/log"
+pid_file            "~/.local/share/mpd/pid"
+state_file          "~/.local/share/mpd/state"
+
+bind_to_address     "127.0.0.1"
+port                "6600"
+
+bind_to_address "/run/user/1000/mpd/socket"
+
+audio_output {
+    type "pipewire"
+    name "PipeWire"
+}
+</pre>
 
 <p>
   Install rmpc using your system package manager.
